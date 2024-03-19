@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Fontes de letra -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Meat Delights</title>
+
+  <!-- Icones fontawesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/responsiveness.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="home">
+    <nav id="homeBar">
+      <div id="name">
+        <h4>Meat <span class="red">Delights</span></h4>
+      </div>
+
+      <!-- Itens Centralizados referente a pesquisa de produtos -->
+      <div id="search">
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div id='cartAndFunctionDark'>
+        <i class="fa fa-shopping-bag"></i>
+        <i id="lightMode" class="fa fa-sun-o"></i>  
+      </div>
+
+    </nav>
+
+    <div id="sectionMeats">
+      <div>
+        <div id="navigationNoble" class="navigation">
+          <pre>Carnes Nobres</pre>
+          <ul class="navList hide">
+            <li>
+              <a href="#meatsNoble">Tomahawk</a>
+            </li>
+            <li>
+              <a href="#meatsNoble">T-bone Angus</a>
+            </li>
+            <li>
+              <a href="#meatsNoble">Babybeef</a>
+            </li>
+          </ul>
+          <i class="fa fa-angle-down"></i>
+        </div>
+      </div>
+
+      <div>
+        <div id="navigationExotic" class="navigation">
+          <pre>Carnes Exóticas</pre>
+          <ul class="navList hide">
+            <li>
+              <a href="#meatsExotic">Avestruz</a>
+            </li>
+            <li>
+              <a href="#meatsExotic">Cabrito</a>
+            </li>
+            <li>
+              <a href="#meatsExotic">Javali</a>
+            </li>
+          </ul>
+          <i class="fa fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainImage">
+      <img src="public/carneSuculenta.png" alt="imagem de um corte de carne nobre">
+      <div>
+        <h1>Meat <span class="red">Delights</span></h1>
+        <p>Seu churrasco merece uma <span class="red">carne de qualidade</span></p>
+      </div>
+    </div>
+    <div id="invitation">
+      <h4>Compre os melhores cortes de carne conosco</h4>
+      <a href="#meatsNoble">
+        <i class="fa fa-angle-double-down"></i>
+      </a>
+    </div>
+  </div><!-- Fechamento da primeira parte da página  -->
+
+  <main>
+    <section id="meatsNoble">
+      <h2>Carnes Nobres</h2>
+
+      <div class='sectionMeatsNoble'>
+        <div class='divNoble'>
+          <h3>Tomahawk</h3>
+          <img src="public/bife-de-tomahawk.png" alt="">
+          <pre class='price'>R$ 79,99(kg)</pre>
+        </div>
+
+        <div class='divNoble'>
+          <h3>T-bone Angus</h3>
+          <img src="public/tboneAngus.png" alt="">
+          <pre class='price'>R$ 89,99(kg)</pre>
+        </div>
+
+        <div class='divNoble'>
+          <h3>Baby beef</h3>
+          <img src="public/babybeef.png" alt="">
+          <pre class='price'>R$ 59,99(kg)</pre>
+        </div>
+
+      </div>
+
+      <div class='sectionMeatsNoble'>
+        <div class='divNoble'>
+          <h3>Ancho Uruguaio</h3>
+          <img src="public/carneAnchoUruguaio.png" alt="">
+          <pre class='price'>R$ 89,90(kg)</pre>
+        </div>
+
+        <div class='divNoble'>
+          <h3>Picanha Argentina</h3>
+          <img src="public/picanhaArgentina.png" alt="">
+          <pre class='price'>R$ 149,99(kg)</pre>
+        </div>
+
+        <div class='divNoble'>
+          <h3>Picanha Uruguaia</h3>
+          <img src="public/picanhaUruguaia.png" alt="">
+          <pre class='price'>R$ 79,99(kg)</pre>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="meatsExotic">
+      <h2>Carnes Exóticas</h2>
+
+      <div class='sectionMeatsExotic'>
+        <div class="divExotic">
+          <h3>Avestruz</h3>
+          <img src="public/avestruz.png" alt="">
+          <pre class='price'>R$ 69,99 (kg)</pre>
+        </div>
+
+        <div class="divExotic">
+          <h3>Cabrito</h3>
+          <img src="public/carneCabrito.png" alt="">
+          <pre class='price'>R$ 49,99 (kg)</pre>
+        </div>
+
+        <div class="divExotic">
+          <h3>Javali</h3>
+          <img src="public/carneJavali.png" alt="">
+          <pre class='price'>R$ 159,99 (kg)</pre>
+        </div>
+      </div>
+
+      <div class='sectionMeatsExotic'>
+        <div class="divExotic">
+          <h3>Rã</h3>
+          <img src="public/carneRa.png" alt="">
+          <pre class='price'>R$ 49,99 (kg)</pre>
+        </div>
+
+        <div class="divExotic">
+          <h3>Pato</h3>
+          <img src="public/carnePato.png" alt="">
+          <pre class='price'>R$ 39,99 (kg)</pre>
+        </div>
+
+        <div class="divExotic">
+          <h3>Jacaré</h3>
+          <img src="public/carneJacare.png" alt="">
+          <pre class='price'>R$ 139,99 (kg)</pre>
+        </div>
+      </div>
+      
+    </section>
+
+    <hr class="sectionSeparator">
+    <section id="about">
+      <div>
+        <div id="logo">
+         <img src="public/logotipo.png" alt="">
+        </div>
+        <h2>Quem <span class="red">somos?</span></h2>
+        <p>Somos uma empresa familiar que há 40 anos preza por <span class="red">qualidade e preço</span>. Temos cortes diversos, mas nosso cargo chefe são os cortes exóticos. Nossa dedicação visa oferecer os melhores produtos possíveis para nossos consumidores, no menor preço possível, nos tornando referência no Rio de Janeiro</p>
+        <h2>O que <span class="red">fazemos?</span></h2>
+        <p>
+          Nós Comemos...<br>
+          Bebemos...<br>
+          Cozinhamos...<br>
+          Conversamos sobre novos sabores...<br>
+          Acreditamos que comer é uma das grandes maravilhas da vida.
+        </p>
+      </div>
+    </section>
+    <hr class="sectionSeparator">
+   
+    <form method="post">
+      <div id="form">
+        <div>
+          <label for="name">Nome:</label> <br>
+          <input type="text" id="inputName" name="name" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+          <div>
+            <label for="email">E-mail:</label> <br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div>
+            <label for="telephone">Telefone:</label> <br>
+            <input type="tel" id="telephone" name="telephone" placeholder="Digite seu número de telefone" required>
+          </div>
+          
+          <div id="radioButtons">
+            <label for="preference">Preferência:</label>
+            <div class="layoutRadioButton">
+              <div id="radioExotic" class="radioButton"><div></div></div>
+              <p>Carnes Exóticas</p>
+            </div>
+            <div class="layoutRadioButton">
+              <div id="radioTraditional" class="radioButton"><div></div></div>
+              <p>Carnes Tradicionais</p>
+            </div>
+             <div class="layoutRadioButton">
+              <div id="both" class="radioButton"><div></div></div>
+              <p>Ambas</p>
+              </div>
+          </div>
+          
+          <section id="selectDropdown">
+            <div id="initialText">
+              <h5>Selecione seu tipo de carne preferido</h5>
+              <i id="arrowSelected" class="fa fa-angle-down"></i>
+            </div>
+            <div class="dropdown hide">
+              <h5 id="itemBovine" class="itemSelected">Bovina</h5>
+              <h5 id="itemPork" class="itemSelected">Suína</h5>
+              <h5 id="itemBirds" class="itemSelected">Aves</h5>
+              <h5 id="itemSeafood" class="itemSelected">Frutos do Mar</h5>
+              <h5 id="itemOthers" class="itemSelected">Outras</h5>
+            </div>
+          </section>
+
+          <div id="checkBox">
+            <label for="comunication">Preferência de contato:</label>
+            <div class="layoutCheckBox">
+              <div id="checkboxAll" class="checkbox">
+                 <i class="fa fa-check hide"></i>
+              </div>
+              <p>Todos os meios</p>
+            </div>
+            <div class="layoutCheckBox">
+              <div id="checkboxEmail" class="checkbox">
+                 <i class="fa fa-check hide"></i>
+              </div>
+              <p>E-mail</p>
+            </div>
+             <div class="layoutCheckBox">
+              <div id="checkboxSms" class="checkbox">
+                <i class="fa fa-check hide"></i>
+              </div>
+              <p>SMS</p>
+              </div>
+          </div>
+
+          <div id="labelMessage">
+            <label for="message">Descrição opcional:</label>
+            <textarea name="message" id="message" cols="30" rows="10" style="resize:none"></textarea>
+          </div>
+        </div>
+        <div id="submitForm">
+          <input id="buttonSubmit" type="button" value="Enviar">
+        </div>
+      </div>  
+    </form>
+  </main>
+
+  <iframe id="googleMaps"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14695.519924700038!2d-43.1937555!3d-22.9546468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f028e33%3A0x26e83ef7e4032ed2!2sDel%C3%ADcias%20da%20Carne%20Ex%C3%B3ticas%20e%20Cortes%20Argentinos%20e%20Uruguaios!5e0!3m2!1spt-BR!2sbr!4v1702164148479!5m2!1spt-BR!2sbr"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  <footer>
+    <section id="informations">
+      <div>
+      <h2>Localização</h2>
+      <ul id="address">
+        <li>Rua Voluntários da Pátria, 340 loja F</li>
+        <li>Botafogo - Rio de Janeiro</li>
+      </ul>
+        </div>
+      <div>
+      <h2>Horário de funcionamento</h2>
+      <p>Segunda a sexta das 7:00 às 19:00</p>
+      <p>Sábado das 7:00 às 15:00</p>
+        </div>
+    </section>
+    <div id="socialMedia">
+      <h4>Siga nossas redes sociais</h4>
+    <ul>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    </ul>
+      <h4>Contato</h4>
+      <ul>
+        <li><i class="fa fa-whatsapp"></i> (21) 9721-30412</li>
+        <li><i class="fa fa-phone"></i> (21) 2527-7125</li>
+      </ul>
+    </div>
+    <h5 id="copyright">© 2023 Delícias da Carne Exóticas e Cortes Argentinos.<br>Todos os direitos reservados</h5>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

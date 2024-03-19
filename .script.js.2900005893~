@@ -1,0 +1,158 @@
+const iconLightMode = document.querySelector('#lightMode');
+iconLightMode.addEventListener('click', function() {
+  document.body.classList.toggle('lightMode');
+})
+
+// Criar o abrir e fechar os componentes clicaveis de carnes nobres e exóticas
+// Carnes Nobres
+const menuNoble = document.querySelector('#navigationNoble');
+menuNoble.addEventListener('click', function() {
+  const ul = menuNoble.nextElementSibling
+  ul.classList.toggle('hide');
+})
+// Carnes Exóticas
+const menuExotic = document.querySelector('#navigationExotic');
+menuExotic.addEventListener('click', function() {
+  const ul = menuExotic.nextElementSibling
+  ul.classList.toggle('hide');
+})
+
+// radio button
+const radioExotic = document.querySelector("#radioExotic");
+const createDiv = document.createElement("div");
+radioExotic.addEventListener("click", function() {
+  radioExotic.appendChild(createDiv);
+  radioExotic.children[0].classList.toggle("radioSelect");
+})
+
+const radioTraditional = document.querySelector("#radioTraditional");
+radioTraditional.addEventListener("click", function() {
+  radioTraditional.appendChild(createDiv);
+  radioTraditional.children[0].classList.toggle("radioSelect");
+})
+
+const radioBoth = document.querySelector("#both");
+radioBoth.addEventListener("click", function() {
+  radioBoth.appendChild(createDiv);
+  radioBoth.children[0].classList.toggle("radioSelect");
+})
+
+//Select Dropdown
+const selectDropdown = document.querySelector("#initialText");
+const dropdown = document.querySelector(".dropdown");
+
+selectDropdown.addEventListener("click", function() {
+  dropdown.classList.toggle("hide");
+  const arrowSelected = document.querySelector("#arrowSelected");
+  arrowSelected.style.transform = "rotate(180deg)";
+});
+
+const itemSelectedBovine = document.querySelector("#itemBovine");
+itemSelectedBovine.addEventListener("click", function() {
+  const text = itemSelectedBovine.textContent;
+  selectDropdown.textContent = text;
+  dropdown.classList.add("hide");
+})
+
+const itemSelectedPork = document.querySelector("#itemPork");
+itemSelectedPork.addEventListener("click", function() {
+  const text = itemSelectedPork.textContent;
+  selectDropdown.textContent = text;
+  dropdown.classList.add("hide");
+})
+
+const itemSelectedBirds = document.querySelector("#itemBirds");
+itemSelectedBirds.addEventListener("click", function() {
+  const text = itemSelectedBirds.textContent;
+  selectDropdown.textContent = text;
+  dropdown.classList.add("hide");
+})
+
+const itemSelectedSeafood = document.querySelector("#itemSeafood");
+itemSelectedSeafood.addEventListener("click", function() {
+  const text = itemSelectedSeafood.textContent;
+  selectDropdown.textContent = text;
+  dropdown.classList.add("hide");
+})
+
+const itemSelectedOthers = document.querySelector("#itemOthers");
+itemSelectedOthers.addEventListener("click", function() {
+  const text = itemSelectedOthers.textContent;
+  selectDropdown.textContent = text;
+  dropdown.classList.add("hide");
+})
+
+// Checkbox
+const checkboxAll = document.querySelector("#checkboxAll");
+const checkAll = checkboxAll.children[0];
+
+const checkboxEmail = document.querySelector("#checkboxEmail");
+const checkEmail = checkboxEmail.children[0];
+
+const checkboxSms = document.querySelector("#checkboxSms");
+const checkSms = checkboxSms.children[0];
+
+checkboxAll.addEventListener("click", function() {
+  checkAll.classList.toggle("hide");
+  if (!(checkAll.classList.contains("hide"))) {
+    checkEmail.classList.remove("hide");
+    checkSms.classList.remove("hide");
+  }
+  else if (checkAll.classList.contains("hide")) {
+    checkEmail.classList.add("hide");
+    checkSms.classList.add("hide");
+  }
+});
+
+checkboxEmail.addEventListener("click", function() {
+  checkEmail.classList.toggle("hide");
+  if(checkSms.classList.contains("hide") || checkEmail.classList.contains("hide")){
+    checkAll.classList.add("hide");
+  }else if (!(checkSms.classList.contains("hide"))) {
+    checkAll.classList.remove("hide");
+  }else{
+    checkAll.classList.add("hide");
+  }
+})
+
+checkboxSms.addEventListener("click", function() {
+  checkSms.classList.toggle("hide");
+  if(checkSms.classList.contains("hide") || checkEmail.classList.contains("hide")){
+    checkAll.classList.add("hide");
+  }else if(!(checkEmail.classList.contains("hide"))){
+    checkAll.classList.remove("hide");
+  }else{
+    checkAll.classList.add("hide");
+  }
+})
+
+// Validações do Formulário
+const buttonSubmit = document.querySelector("#buttonSubmit");
+const inputName = document.querySelector("#inputName");
+const inputEmail = document.querySelector("#email");
+
+
+buttonSubmit.addEventListener("click", function(){
+  // Validação do campo nome do formulário
+  if(!(inputName.value !== "" && inputName.value.includes(" "))){
+    alert("O nome está em branco ou não contém pelo menos dois nomes");
+ } // val
+  else if(!(inputEmail.value.includes("@") && inputEmail.value.includes("."))){
+    alert("O email precisa conter um @");
+  }else{
+    alert("Formulário enviado com sucesso");
+  }
+})
+
+
+
+
+
+
+
+
+/* Códigos defasados */
+
+// function darkMode(){
+//    document.body.classList.toggle('lightMode');
+// }

@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0D0C11;
+  color: whitesmoke;
+}
+
+/* Alternação entre modo escuro e claro */
+.lightMode {
+  background-color: whitesmoke;
+  color: #0D0C11;
+}
+
+.red {
+  color: #e51e2a;
+}
+
+.marginBottom {
+  height: 1px;
+  width: 50px;
+  background-color: #e51e2a;
+  display: flex;
+
+}
+
+#home {
+  height: 100vh;
+}
+
+#homeBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  height: 5rem;
+  align-items: center;
+}
+
+#homeBar i {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+#search i {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px;
+  border: 1px solid #5C0A0A;
+  border-radius: 10px;
+  background-color: #e51e2a;
+}
+
+#cartAndFunctionDark i {
+  margin: 0 0.5rem;
+}
+
+#sectionMeats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+/* Estilização referente ao ambiente navegavel com li e a para tornar itens clicaveis e redirecionar */
+.navList {
+  width: 120px;
+  position: absolute;
+  z-index: 1;
+}
+
+.navList li {
+  list-style: none;
+}
+
+.navList a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.navList a:hover {
+  color: #e51e2a;
+}
+
+/* Ocultar  */
+.hide {
+  display: none;
+}
+
+.hideButton {
+  display: none;
+}
+
+/* Facilitar identificação dos textos clicaveis carnes Nobres e Exóticas */
+.navigation {
+  cursor: pointer;
+}
+
+.navigation>i {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+#mainImage {
+  height: calc(100vh - 15rem);
+  display: flex;
+  align-items: center;
+}
+
+#mainImage img {
+  width: 40vw;
+}
+
+#invitation {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#invitation>a {
+  color: #e51e2a;
+}
+
+main {
+  margin-top: 200px;
+
+}
+
+#meatsNoble {
+  height: 150vh;
+  text-align: center;
+}
+
+.sectionMeatsNoble {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.divNoble {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 16vw;
+  height: 50vh;
+  border-radius: 50px;
+  background: rgb(13, 12, 17);
+  background: linear-gradient(0deg, rgba(13, 12, 17, 1) 31%, rgba(229, 30, 42, 1) 95%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.divNoble img {
+  width: 150px;
+}
+
+.divNoble:hover {
+  box-shadow: rgba(200, 0, 0, 0.3) 0px 19px 38px, rgba(200, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.divNoble img:hover {
+  transform: scale(1.3) rotate(6deg);
+}
+
+#meatsExotic {
+  height: 150vh;
+  text-align: center;
+}
+
+.sectionMeatsExotic {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.divExotic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 16vw;
+  height: 50vh;
+  border-radius: 50px;
+  background: rgb(13, 12, 17);
+  background: linear-gradient(0deg, rgba(13, 12, 17, 1) 31%, rgba(229, 30, 42, 1) 95%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.divExotic img {
+  width: 150px;
+}
+
+.divExotic:hover {
+  box-shadow: rgba(200, 0, 0, 0.3) 0px 19px 38px, rgba(200, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.divExotic img:hover {
+  transform: scale(1.3) rotate(6deg);
+}
+
+.price {
+  align-items: flex-end;
+}
+
+.sectionSeparator {
+  margin: 10px 5vw;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  width: 200px;
+}
+
+#about>div {
+  width: 40vw;
+}
+
+#about>div>h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  padding: 20px 50px;
+  border-radius: 10px;
+  /* background-color:#98211F; */
+  background-color: #e51e2a;
+}
+
+input {
+  border-radius: 5px;
+}
+
+#radioButtons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.radioSelect {
+  width: 13px;
+  height: 13px;
+  background-color: #5C0A0A;
+  border-radius: 50%;
+}
+
+.layoutRadioButton {
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.radioButton {
+  width: 15px;
+  height: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#selectDropdown {
+  width: 40vw;
+  margin-top: 10px;
+  background-color: #1e1c26;
+  border-radius: 10px;
+}
+
+#initialText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#initialText > i {
+  margin: 5px;
+}
+
+.dropdown {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  background-color: #1e1c26;
+  border-radius: 10px;
+  width: 40vw;
+}
+
+.itemSelected {
+  cursor: pointer;
+}
+
+#checkBox {
+  display: flex;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.checkbox>i {
+  color: #00bf00;
+  align-items: center;
+}
+
+.layoutCheckBox {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+#labelMessage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#submitForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#buttonSubmit {
+  width: 60px;
+}
+
+#googleMaps {
+  margin: 10px 0;
+}
+
+footer {
+  margin-top: 10px;
+  background: rgb(13, 12, 17);
+  background: linear-gradient(180deg, rgba(13, 12, 17, 1) 18%, rgba(229, 30, 42, 1) 53%);
+}
+
+#informations {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#informations>div {
+  text-align: center;
+  padding: 5px;
+  border-radius: 30px;
+  /* background: rgb(223, 225, 235); */
+  background: rgb(13, 12, 17);
+  background: linear-gradient(0deg, rgba(13, 12, 17, 1) 31%, rgba(229, 30, 42, 1) 95%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#address {
+  list-style: none;
+}
+
+#socialMedia {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+#socialMedia h4 {
+  margin-top: 5px;
+}
+
+#socialMedia>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#socialMedia>ul>li {
+  font-size: 25px;
+  list-style: none;
+  margin: 5px 20px;
+}
+
+#socialMedia a {
+  color: whitesmoke;
+}
+
+#socialMedia a:hover {
+  color: black;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 20px;
+}
