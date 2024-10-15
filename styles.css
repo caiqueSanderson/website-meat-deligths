@@ -303,7 +303,7 @@ input {
   cursor: pointer;
 }
 
-#initialText > i {
+#initialText>i {
   margin: 5px;
 }
 
@@ -427,3 +427,87 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+
+
+/* @media screen and (max-width:576px) {
+  html {
+    width: 100vw;
+  }
+
+  #homeBar {
+    width: 100vw;
+    padding: 2rem 5%;
+    height: 5rem;
+    align-items: center;
+  }
+
+  #homeBar>i {
+    font-size: 1.5rem;
+  }
+
+  #mainImage img {
+    margin-top: 2rem;
+  }
+
+} */
+
+@media screen and (max-width:768px) {
+  body {
+    width: auto;
+  }
+
+  #homeBar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    height: 5rem;
+    align-items: center;
+  }
+
+  #name {
+    width: 20vw;
+    text-align: center;
+  }
+
+  #search input {
+    width: 30vw;
+  }
+
+  .sectionMeatsNoble {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .divNoble {
+    margin-top: 20px;
+    width: 45vw;
+    height: 40vh;
+  }
+
+
+  form {
+    margin-top: 5vh;
+    width: 100vw;
+  }
+
+  #form {
+    width: 100vw;
+    padding: 20px 30px;
+    border-radius: 10px;
+    /* background-color:#98211F; */
+    background-color: #e51e2a;
+  }
+}
+
+/* @media(max-width:992px) {}
+
+@media(min-width:1200px) {
+  #home {
+    height: 100vh;
+  }
+
+  #homeBar>i {
+    font-size: 2.2rem;
+  }
+} */
