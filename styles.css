@@ -70,7 +70,12 @@ body {
 
 /* Estilização referente ao ambiente navegavel com li e a para tornar itens clicaveis e redirecionar */
 .navList {
+  background-color: #1e1d25;
   width: 120px;
+  margin-top: 15px;
+  border-radius: 5px;
+
+
   position: absolute;
   z-index: 1;
 }
@@ -474,17 +479,43 @@ footer {
     width: 30vw;
   }
 
+  #meatsNoble {
+    height: 200vh;
+  }
+
   .sectionMeatsNoble {
-    flex-wrap: wrap;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   .divNoble {
     margin-top: 20px;
+    margin: 5px;
     width: 45vw;
     height: 40vh;
   }
 
+  #meatsExotic {
+    height: 200vh;
+  }
+
+  .sectionMeatsExotic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .divExotic {
+    margin-top: 20px;
+    margin: 5px;
+    width: 45vw;
+    height: 40vh;
+  }
+
+  #about>div {
+    width: 80vw;
+  }
 
   form {
     margin-top: 5vh;
@@ -494,9 +525,29 @@ footer {
   #form {
     width: 100vw;
     padding: 20px 30px;
+    margin: 0 20px;
     border-radius: 10px;
-    /* background-color:#98211F; */
-    background-color: #e51e2a;
+  }
+
+  #radioButtons {
+    flex-direction: column;
+  }
+
+  #selectDropdown {
+    width: 100%;
+  }
+
+  #checkBox {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  footer h2, footer h4 {
+    font-size: 1.4rem;
+  }
+
+  #socialMedia>ul>li {
+    font-size: 1rem;
   }
 }
 
